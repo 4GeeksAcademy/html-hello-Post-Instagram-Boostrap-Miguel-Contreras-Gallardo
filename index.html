@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Post Instagram Boostrap</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar bg-body-tertiary fw-bold">
+            <div class="container-fluid d-flex align-items-start">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-brands fa-instagram" d-inline-block align-text-top></i>
+                    Instagram
+                </a>
+                <div class="d-flex justify-content-end gap-2">
+                    <div>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Create a new
+                                            post</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="postContenido" class="form-label">Caption:</label>
+                                            <textarea class="form-control text-secondary" id="postContenido"
+                                                name="contenido" rows="2"
+                                                required>Add the caption of your post here</textarea>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn border btn-white" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                                <i class="fa-solid fa-camera"></i>
+                                                <button type="button" class="btn border m-2 btn-white"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success">Publish</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="dropdown d-flex">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-white">
+                            <li><a class="dropdown-item active" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-2 w-50 p-3 bg-light border">
+
+        <div class="container">
+            <div>
+                <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true"><i
+                                class="fa-solid fa-table-cells"></i></a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false"><i
+                                class="fa-solid fa-square"></i></a>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel"
+                        aria-labelledby="home-tab">
+                        <div class="row g-2">
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.larutadelascivilizaciones.com/wp-content/uploads/2018/10/recomendaciones-china.jpg"
+                                    class="card-img-top" class="img-fluid w-100" alt="...">
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.viajesyfotografia.com/wp-content/uploads/2025/03/muralla-pekin-20240914_000003.jpg"
+                                    class="card-img-top" class="img-fluid w-100" alt="...">
+                            </div>
+
+                            <div class="card" style="width: 18rem;">
+                                <img src="https://www.notasdeunviajero.com/wp-content/uploads/2019/02/bahia-de-halong-vietnam.jpg"
+                                    class="card-img-top" class="img-fluid w-100" alt="...">
+                            </div>
+
+                            <div class="row g-2">
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://cdn0.geoenciclopedia.com/es/posts/8/0/0/montanas_8_orig.jpg"
+                                        class="card-img-top" class="img-fluid w-100" alt="...">
+                                </div>
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://images.mnstatic.com/b5/c2/b5c2aeb55e2b58feed7bbb3197d9254d.jpg"
+                                        class="card-img-top" class="img-fluid w-100" alt="...">
+                                </div>
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRjScVmrF1iR7dl15oWEM8BdPh3UjKloo6Q&s"
+                                        class="card-img-top" class="img-fluid w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                            <div class="row g-2">
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://www.cadizturismo.com/storage/app/media/IMAGENES/PLAYAS/Bolonia/Playa%20de%20Bolonia%20-%20Tarifa.jpg"
+                                        class="card-img-top" class="img-fluid w-100" alt="...">
+                                </div>
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://zapatillasporelmundo.com/wp-content/uploads/2023/08/picturesque-inlet-sand-and-rocky-beach-gulpiyuri-asturias-spain.jpg"
+                                        class="card-img-top" class="img-fluid w-100" alt="...">
+                                </div>
+
+                                <div class="card" style="width: 18rem;">
+                                    <img src="https://elviajerofeliz.com/wp-content/uploads/2022/07/Costa-Da-Morte.jpg"
+                                        class="card-img-top" class="img-fluid w-100" alt="...">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel"
+                        aria-labelledby="profile-tab">
+                        <div class="contenedor mt-3 mb-3 d-flex justify-content-center">
+                            <div class="card" style="width: 40;">
+                                <div class="head p-3 d-flex justify-content-between">
+                                    <div>
+                                        <h5 class="card-title">My crazy sport favorit</h5>
+                                    </div>
+                                    <h5 class="fecha">08/26</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://images.contentstack.io/v3/assets/blt45c082eaf9747747/bltefb0fbc1e00ea3fd/5de0b954457a637f467af95e/_RUE2652_cut.jpg?format=pjpg&auto=webp&quality=76&width=1232"
+                                        class="card-img-top" alt="Trail running">
+                                    <p class="card-text fw-bold mt-2 mb-0">204 Likes</p>
+                                    <p class="card-text">This is my favorit sport</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenedor mb-3 d-flex justify-content-center">
+                            <div class="card" style="width: 40;">
+                                <div class="head p-3 d-flex justify-content-between">
+                                    <div>
+                                        <h5 class="card-title">A other crazy sport favorit</h5>
+                                    </div>
+                                    <h5 class="fecha">09/26</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://www.nomeatathlete.com/wp-content/uploads/2012/03/running-feature-image.png"
+                                        class="card-img-top" alt="running">
+                                    <p class="card-text fw-bold mt-2 mb-0">204 Likes</p>
+                                    <p class="card-text">Other favorit sport</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contenedor mb-3 d-flex justify-content-center">
+                            <div class="card" style="width: 40;">
+                                <div class="head p-3 d-flex justify-content-between">
+                                    <div>
+                                        <h5 class="card-title">Crazy MTB sport</h5>
+                                    </div>
+                                    <h5 class="fecha">10/26</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://res.cloudinary.com/manawa/image/upload/c_fill,g_auto,h_630,w_1200,q_auto/articles/2990/mtb-downhill"
+                                        class="card-img-top" alt="Mtb">
+                                    <p class="card-text fw-bold mt-2 mb-0">204 Likes</p>
+                                    <p class="card-text">This is the first sport that was practiced</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contenedor mb-3 d-flex justify-content-center">
+                            <div class="card" style="width: 40;">
+                                <div class="head p-3 d-flex justify-content-between">
+                                    <div>
+                                        <h5 class="card-title">I love tech and videogames!!!</h5>
+                                    </div>
+                                    <h5 class="fecha">11/26</h5>
+                                </div>
+                                <div class="card-body">
+                                    <img src="https://techhq.com/wp-content/uploads/2020/10/shutterstock_1096975310.png"
+                                        class="card-img-top" alt="Hacker">
+                                    <p class="card-text fw-bold mt-2 mb-0">204 Likes</p>
+                                    <p class="card-text">TI'll soon be a hacker, man, hahaha!!!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
